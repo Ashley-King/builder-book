@@ -3,7 +3,7 @@ import { ThemeProvider } from '@material-ui/styles';
 import React from 'react';
 import App, { Container } from 'next/app';
 import Header from './components/Header';
-import theme from '../lib/theme';
+import { theme } from '../lib/theme';
 
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
