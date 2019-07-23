@@ -29,7 +29,7 @@ app.prepare().then(() => {
   const server = express();
   const MongoStore = mongoSessionStore(session);
   const sess = {
-    name: 'builderbook.sid',
+    name: 'book.sid',
     secret: 'HD2w.)q*VqRT4/#NK2M/,E^B)}FED5fWU!dKe[wk',
     store: new MongoStore({
       mongooseConnection: mongoose.connection,
@@ -38,7 +38,7 @@ app.prepare().then(() => {
     resave: false,
     saveUninitialized: false,
     cookie: {
-      httpOnly: true,
+      httpOnly: false,
       maxAge: 14 * 24 * 60 * 60 * 1000,
     },
   };
