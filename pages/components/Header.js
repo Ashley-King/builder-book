@@ -14,13 +14,13 @@ const Header = ({ user }) => (
           {user ? (
             <div>
               <Hidden smDown>
-                <Link prefectch href="/">
+                <Link prefetch href="/">
                   <a style={{ marginRight: '20px' }}>Settings</a>
                 </Link>
               </Hidden>
             </div>
           ) : (
-            <Link prefect href="/">
+            <Link prefetch href="/">
               <Avatar
                 src="https://storage.googleapis.com/builderbook/logo.svg"
                 alt="Builder Book Logo"
